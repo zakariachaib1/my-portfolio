@@ -1,0 +1,128 @@
+body {
+	color: white;
+	background-color: black;
+	font-family: 'Haas Grot Text Web', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 0.85em;
+	line-height: 1.22;
+	letter-spacing: .16px;
+	font-feature-settings: "liga", "kern";
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+/* Styles for screens smaller than 768px (phones) */
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .image-container img {
+        max-width: 100%;
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.image-container img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+}
+
+.image-info {
+    text-align: center;
+}
+
+@font-face {
+	font-family: 'code/Haas Grot Text Web';
+	src: url('code/NeueHaasGrotText-65Medium-Web.eot');
+	src: url('code/NeueHaasGrotText-65Medium-Web.eot?#iefix') format('embedded-opentype'),
+		url('code/NeueHaasGrotText-65Medium-Web.woff2') format('woff2'),
+		url('code/NeueHaasGrotText-65Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "Nassim Arabic Web";
+	src: url('NassimArabicWeb-Sb.woff2') format('woff2'), url('NassimArabicWeb-Sb.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+
+}
+
+header h1 {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+.contact-btn {
+	font-family: Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.contact-link {
+	font-family: Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.back-btn {
+	font-family: Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.contact-link, .back-link {
+	text-decoration: none;
+}
+
+.back-link {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.text-triple {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
